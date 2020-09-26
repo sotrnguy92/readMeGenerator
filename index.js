@@ -61,11 +61,18 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) throw  err;
+    })
 }
 
 function init() {
     inquirer
         .prompt(questions)
+        .then(async answers => {
+            const markdown = await generateMD(answers);
+            writeToFile('generatedREADME', markdown)
+        })
 }
 
 init();
