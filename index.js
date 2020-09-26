@@ -11,7 +11,19 @@ const questions = [
         type: 'input',
         name: 'year',
         message: 'What is the year?'
+    },
+    {
+        type: 'input',
+        name: 'year',
+        message: 'What is the year?'
+    },
+    {
+        type: 'input',
+        name: 'year',
+        message: 'What is the year?'
     }
+
+
 
 ];
 
