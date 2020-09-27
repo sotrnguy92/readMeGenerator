@@ -1,2 +1,4 @@
 node_modules
 .env
+utils/token.js
+.idea

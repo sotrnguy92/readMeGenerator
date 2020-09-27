@@ -1,6 +1,22 @@
+const token = require('./token')
+
+const param = {
+  headers: {'Authorization': token}
+}
 
 const api = {
-  getUser(username) {
+  async getUser(username) {
+    const axios = require('axios');
+    try {
+      const{ data: {user_url, email}} = await axios.get(`https://api.github.com/user/${username}`, param);
+      return{
+        user_url,
+        email
+      }
+
+    }catch (err){
+      console.log(err);
+    }
 
   }
 };
