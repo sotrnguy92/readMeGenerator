@@ -71,7 +71,7 @@ function init() {
         .prompt(questions)
         .then(async answers => {
             const markdown = await generateMD(answers);
-            writeToFile('generatedREADME', markdown)
+            writeToFile('generatedREADME.md', markdown)
         })
 }
 
