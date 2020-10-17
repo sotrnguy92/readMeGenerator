@@ -1,9 +1,10 @@
 
-# ReadMe Generator
+  
+# Readme Generator
 
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/txt/copying/)
 
-\license will go here
+
 
 ## Table of Contents
 * [Description](#description)
@@ -15,7 +16,7 @@
 * [Questions](#questions)
 
 ## Description
-this project should create a program to generate a good readme
+This project should create a program to generate a good readme file
 
 
 ## Installation
@@ -37,8 +38,9 @@ npm test
 
 ## Questions
 
-Ask any questions by opening an issue with [sotrnguy92](https://github.com/sotrnguy92) or contact through email at null.
+Ask any questions by opening an issue with [sotrnguy92](https://github.com/sotrnguy92) or contact through email at sonnguyen092@gmail.com.
 
+![avatar](https://avatars3.githubusercontent.com/u/11791361?v=4)
 
 © 2020 Son Nguyen
 

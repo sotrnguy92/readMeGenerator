@@ -75,9 +75,9 @@ ${data.test}
 
 ## Questions
 
-Ask any questions by opening an issue with [${data.github}](https://github.com/${data.github}) or contact through email at ${userEmail}.
+Ask any questions by opening an issue with [${data.username}](https://github.com/${data.username}) or contact through email at ${userEmail}.
 
-![](${gitData.avatar_url})
+![avatar](${gitData.avatar_url})
 
 © ${data.year} ${data.name}
 
