@@ -3,7 +3,7 @@ const github = require ('./api.js');
 async function generateMarkdown(data) {
   let licenseBadge = '';
   let licenseURL = '';
-  const gitData = await api.getUser(data.username)
+  const gitData = await github.getGithub(data.username)
   switch (data.license){
     case `MIT`:
       licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)]';
@@ -29,11 +29,11 @@ async function generateMarkdown(data) {
       licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
       licenseURL = 'https://opensource.org/licenses/GPL-3.0';
       break;
-
-
   }
   return `
 # ${data.project}
+
+${licenseBadge}
 
 \\license will go here
 
@@ -51,7 +51,7 @@ ${data.description}
 
 
 ## Installation
-To instal the required dependencies run the following command:
+To install the required dependencies run the following command:
 ${data.install}
 
 ## Usage
