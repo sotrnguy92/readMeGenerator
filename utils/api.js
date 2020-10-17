@@ -5,7 +5,7 @@ const param = {
 }
 
 const api = {
-  async getUser(username) {
+  async getGithub(username) {
     const axios = require('axios');
     try {
       const{ data: {user_url, email}} = await axios.get(`https://api.github.com/user/${username}`, param);
