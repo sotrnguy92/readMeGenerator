@@ -1,7 +1,7 @@
 
-# Readme Generator
+# ReadMe Generator
 
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)]
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/txt/copying/)
 
 \license will go here
 
@@ -15,7 +15,7 @@
 * [Questions](#questions)
 
 ## Description
-This project should create a readme
+this project should create a program to generate a good readme
 
 
 ## Installation

@@ -30,12 +30,18 @@ async function generateMarkdown(data) {
       licenseURL = 'https://opensource.org/licenses/GPL-3.0';
       break;
   }
+
+  let userEmail = gitData.email;
+  if (!gitData.email){
+    userEmail = data.email;
+  }
   return `
+  
 # ${data.project}
 
 ${licenseBadge}
 
-\\license will go here
+
 
 ## Table of Contents
 * [Description](#description)
@@ -69,8 +75,9 @@ ${data.test}
 
 ## Questions
 
-Ask any questions by opening an issue with [${data.github}](https://github.com/${data.github}) or contact through email at ${gitData.email}.
+Ask any questions by opening an issue with [${data.github}](https://github.com/${data.github}) or contact through email at ${userEmail}.
 
+![](${gitData.avatar_url})
 
 © ${data.year} ${data.name}
 
