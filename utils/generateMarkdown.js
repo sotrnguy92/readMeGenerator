@@ -58,7 +58,7 @@ ${data.install}
 ${data.usage}
 
 ## License
-${data.license}
+${data.license} ${licenseURL}
 
 ## Contributing
 ${data.contributing}
@@ -69,6 +69,10 @@ ${data.test}
 
 ## Questions
 
+Ask any questions by opening an issue with [${data.github}](https://github.com/${data.github}) or contact through email at ${gitData.email}.
+
+
+© ${data.year} ${data.name}
 
 `;
 }
